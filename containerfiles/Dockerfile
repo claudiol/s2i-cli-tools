@@ -9,3 +9,5 @@ RUN dnf install --disableplugin=subscription-manager --nodocs jq -y && \
     rm -rf /var/run/cache
 
 USER 1001
+
+CMD [ "/bin/sh", "-c" , "while true; do echo Hello world; sleep 10; done" ]
